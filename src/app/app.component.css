@@ -1,0 +1,62 @@
+.container:hover
+{
+    background-color: lightgray;
+    color           : blue;
+}
+.nav-item nav-link
+{
+    color: blue;     
+}
+.nav-item{
+    margin-right:5px;
+    padding:0px
+}
+.nav-item a{
+    margin-top: 3px;
+}
+.nav-item a i{
+    margin-right: 4px;
+}
+.collapse
+{
+    font-weight: bold;  
+}
+.navbar navbar-expand-lg navbar-light bg-light
+{
+    background-color: lightblue;
+}
+nav.navbar:hover
+{
+    background-color: blue;
+}   
+.navbar-nav a{
+    color: blue;
+}
+.navbar-nav a:hover
+{
+    background-color:lightgreen;
+    color: rgb(250, 0, 175);
+    font-weight: bold;
+}
+.nav-link
+{
+    color: lightskyblue;
+}
+.col-4
+{
+    padding:0px
+}
+h5{
+    padding-top:20px;
+    padding-left: 20px;
+}
+a.fa
+{
+    margin-right: 3px
+}
+footer a{
+    color: navy;
+    margin-left:20px;
+    margin-top: 10px
+
+}

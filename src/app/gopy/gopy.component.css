@@ -1,0 +1,27 @@
+h3{
+    position: relative;
+    top:-40px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.form-inline my-2 my-lg-0
+{
+    float: right;
+}
+.star
+{
+    color: red;
+}
+.list-group-item
+{
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    border-radius: 0px;
+    margin: 0px;
+}
+.list-group a:hover{
+    color: blue;
+    background: lightsteelblue;
+}

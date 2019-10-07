@@ -1,0 +1,25 @@
+<div class="alert alert-primary" role="alert" style="background-color:lightgrey;color: gray bold ;border-radius: 0px">
+    <h4 style="text-align: center">
+            Đăng Nhập
+    </h4>
+</div>
+        <form  style="width:50%;margin: 0px auto">
+            <div class="form-group ">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                    <label for="inputEmail4">Mật Khẩu</label>
+                    <input type="password" class="form-control" id="inputEmail4" placeholder="******" style="margin-bottom: 17px">
+                    <a class="dangnhap" href="#"><input type="submit" class="btn btn-primary" value="Đăng nhập" name="Đăng nhập" style="width:100%;background-color:hsl(147, 50%, 47%)"></a>
+                <a href="#">
+                    <button type="button" class="btn btn-primary" value="Đăng nhập facebook" style="width:100%;margin:17px 0px"> Đăng nhập facebook </button>                    
+                </a>
+                <a [routerLink]="['/dangky']" class="fb">Tạo tài khoản</a>               
+                <a href="#" class="fb">Quên mật khẩu</a>
+                <a href="#" class="fb"> Cần hổ trợ ? </a>
+            </div>                                                 
+        </form>     
+
+
