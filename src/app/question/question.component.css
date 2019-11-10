@@ -1,0 +1,9 @@
+button:hover
+{
+    font-size: 19px;
+    color:greenyellow ;
+}
+.text:hover
+{
+    color: blueviolet;
+}

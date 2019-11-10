@@ -1,66 +1,75 @@
 <div class="container" style="padding:0px;">
-        <img src="./assets/banner.png" width="100%" >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 0px" >      
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: lightsalmon">
-              <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active" style="margin-left: 20px">
-                     <a class="nav-link"  [routerLink]="['/home']"><i class="fa fa-home" aria-hidden="true"></i>Trang chủ<span class="sr-only">(current)</span></a>
-                  </li>
-                <li class="nav-item active">
-                  <a class="nav-link"  [routerLink]="['/gioithieu']"><i class="fa fa-users" aria-hidden="true"></i>Giới thiệu <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link"  [routerLink]="['/lienhe']"><i class="fa fa-phone-square" aria-hidden="true"></i>Liên hệ <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link"  [routerLink]="['/gopy']"><i class="fa fa-envelope-open" aria-hidden="true"></i>Góp ý<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link"  [routerLink]="['/hoidap']"><i class="fa fa-question-circle" aria-hidden="true"></i>Hỏi đáp <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active" >
-                    <a class="nav-link"  [routerLink]="['/danhmucmonhoc']"><i class="fa fa-th-list" aria-hidden="true"></i>Danh mục môn học<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link"  [routerLink]="['/thitracnghiem']"><i class="fa fa-check-square" aria-hidden="true"></i>Thi trắc nghiệm<span class="sr-only">(current)</span></a>
-                  </li> 
-                <li class="nav-item dropdown" id="taikhoan" style="margin-left: 100px">
-                  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <button  type="button" style="color:blueviolet;background:lightgreen;font-weight: bold;margin-top: -3px"><i class="fa fa-user-circle" aria-hidden="true"></i>Tài Khoản</button>  
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item"  [routerLink]="['/dangnhap']">Đăng nhập</a>
-                    <a class="dropdown-item"  [routerLink]="['/dangky']">Đăng ký</a>
-                    <a class="dropdown-item" [routerLink]="['/doimatkhau']">Đổi mật khẩu</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item"  [routerLink]="['/doitk']">Sửa đổi tài khoản</a>
-                  </div>
-                </li>
-                
-              </ul> <!--end ul-->
-            
-            </div> <!--end nav-->
-          </nav>
-  <router-outlet></router-outlet>
- <footer class="row" style="background-color:#42EC95;height:auto;width: 100%;margin: 0px;margin-top:10px;color: blue;font-weight: bold">
-    <div class="col-4">
-        <h5>Liên hệ chúng tôi qua</h5>
-        <a href="http://gmail.com">  <i class="fa fa-envelope" aria-hidden="true"></i> hungngan185&#64;gmail.com	</a><br>
-        <a href="http://facebook.com" > <i class="fa fa-facebook-official" aria-hidden="true"></i> .//hungngan1851999</a><br>
-          <img src="https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.0-9/31958826_2086369274983852_8342319488183566336_n.jpg?_nc_cat=108&_nc_oc=AQkKpBlQnv9UjzRcuYDFHik5gAzS3misOAx2t3lPJIUN2qyAkkGMRbJH19_289vXOUMs9mPTHsoBoEaxFCQJcg8o&_nc_ht=scontent.fsgn4-1.fna&oh=b8830f014ed20f62f9cf94e24b606dc6&oe=5DF2D6EB" width="20%;" style="margin-left:20px;">
-    </div>
-
-    <div class="col-4">
-      <h5 >Mọi thắc mắc xin liên hệ</h5>
-        <a href="#"> Địa chỉ: 60/9, Thới An 10, Quận 12, TPHCM</a><br>
-      <a href="#">  <i class="fa fa-phone-square" aria-hidden="true"></i>: 0368010***</a>
-    </div>
-
-    <div class="col-4">
-      <h5 style="text-align: center" >BẢN QUYỀN &copy;</h5>
-        <p style="text-align: center"> Bản quyền thuộc quyền sở hữu của chúng tôi <br>
-        copyright&copy;hungngan185&#64;gmail.com</p>
-          <img style="float: right" src="https://trademarks.vn/wp-content/uploads/2019/02/nguon-goc-va-s%C6%B0-phat-trien-ban-quyen.jpg" width="30%">
-    </div>
- </footer>
+  <img src="./assets/images/banner.png" width="100%" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 0px" >      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active" style="margin-left: 20px;">
+               <a class="nav-link" [routerLink]="['/home']"><i class="fa fa-home" aria-hidden="true"></i>TRANG CHỦ<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['/introduce']"><i class="fa fa-users" aria-hidden="true"></i>GIỚI THIỆU <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"  [routerLink]="['/contact']"><i class="fa fa-phone-square" aria-hidden="true"></i>LIÊN HỆ <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"  [routerLink]="['/feedback']"><i class="fa fa-envelope-open" aria-hidden="true"></i>GÓP Ý<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"  [routerLink]="['/question']"><i class="fa fa-question-circle" aria-hidden="true"></i>HỎI ĐÁP<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active" >
+              <a class="nav-link" [routerLink]="['/subjectlist']"><i class="fa fa-th-list" aria-hidden="true"></i>DANH MỤC MÔN HỌC<span class="sr-only">(current)</span></a>
+            </li> 
+          <li class="nav-item dropdownnav-item dropdown" id="taikhoan" style="margin-left: 100px;">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button  type="button" style="color:blueviolet;background:lightgreen;font-weight: bold;margin-top: -3px">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>TÀI KHOẢN
+              </button>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item"  [routerLink]="['/login']">ĐĂNG NHẬP</a>
+              <a class="dropdown-item"  [routerLink]="['/createacc']">ĐĂNG KÝ</a>
+              <a class="dropdown-item" [routerLink]="['/changepass']">ĐỔI MẬT KHẨU</a>
+              <a class="dropdown-item" [routerLink]="['/forgot']">QUÊN MẬT KHẨU</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item"  [routerLink]="['/updateacc']">SỬA ĐỔI TÀI KHOẢN</a>
+            </div>
+          </li>
+          
+        </ul> <!--end ul-->
+      
+      </div> <!--end nav small-->
+    </nav> <!--end nav big-->
+    <marquee  behavior="SCROLL" scrolldelay="100" scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()" direction="left">
+      <img src="./assets/logos/ADAV.jpg" width="10%" height="10%">  Chào mừng bạn đến với trang web của chúng tôi !</marquee>
+<router-outlet></router-outlet>
+<footer id="ft" class="row" >
+<div class="col-4">
+  <h6>XU HƯỚNG TRẮC NGHIỆM KHÁCH QUAN</h6>
+    <ul>
+      <li>Khảo sát được số lượng lớn thí sinh</li>
+      <li>Kết quả nhanh</li>
+      <li>Điểm số đáng tin cậy</li>
+      <li>Công bằng, chính xác, vô tư</li>
+      <li>Ngăn ngừa "học tủ"</li>
+    </ul>
 </div>
+
+<div class="col-4" >
+<h6 >MỌI THẮC MẮC XN LIÊN HỆ</h6>
+  <p style="opacity: 0.9;"> Địa chỉ: 12 Trịnh Đình Thảo, Tân Bình, TPHCM<p>
+<p>  <i class="fa fa-phone-square" aria-hidden="true"></i>: 0368010***<p>
+</div>
+
+<div class="col-4">
+<h6 style="text-align: center" >BẢN QUYỀN &copy;</h6>
+  <p style="text-align: center"> Bản quyền thuộc quyền sở hữu của chúng tôi <br>
+  </p>
+    <img style="float: right" src="./assets/images/copy.png" width="20%">
+    
+  </div>  
+</footer> <!--end footer-->
+<hr class="hr1">
+<p class="first-p">copyright&copy;hungngan185&#64;gmail.com</p>
+</div> <!--end container-->

@@ -1,0 +1,24 @@
+<div class="row" style="margin-top: 15px">
+  <article class="col-8">
+    <div class="text-center" *ngFor='let s of subject | paginate: { itemsPerPage: itemperpage, currentPage: curpage }'> 
+      <div class="text">
+        <img src="{{s.Logo}}" width="80%" >
+        <a [routerLink] = "['/subjectlist',s.Id]">{{s.Name}}</a>
+      </div> <!--end text-->
+    </div>
+      <div class="move">
+        <button style='font-size:24px' (click)='lastPage()'><i class='fas fa-caret-square-left'></i> Previous</button>
+        <button style='font-size:24px' (click)='nextPage()'>Next <i class='fas fa-caret-square-right'></i></button>
+      </div> <!--end button-->
+      
+          
+  </article> <!--end article--> 
+
+<aside class="col-3"  >
+    <i class="fa fa-th-list" aria-hidden="true"> DANH  MỤC MÔN HỌC  </i>
+                  <div class="list-group" *ngFor="let s of subject">
+                      <a [routerLink] = "['/subjectlist',s.Id]" class = "list-group-item list-group-item-action">{{s.Name}}</a>
+                  </div> <!--end list-->
+</aside> <!--end asdie-->
+</div>
+

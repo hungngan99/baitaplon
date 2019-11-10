@@ -1,18 +1,21 @@
-.container:hover
+.container
 {
-    background-color: lightgray;
-    color           : blue;
+    font-family:'Roboto Condensed';
+    font-size: 17px;
 }
-.nav-item nav-link
+.navbar
 {
-    color: blue;     
+    background-image: url("/assets/images/bg1.jpg");
+    background-repeat: repeat-x;    
 }
 .nav-item{
     margin-right:5px;
-    padding:0px
+    padding:0px;
 }
-.nav-item a{
-    margin-top: 3px;
+.nav-link
+{
+    padding:0px;
+    padding: 10px;
 }
 .nav-item a i{
     margin-right: 4px;
@@ -20,27 +23,33 @@
 .collapse
 {
     font-weight: bold;  
-}
-.navbar navbar-expand-lg navbar-light bg-light
-{
-    background-color: lightblue;
-}
-nav.navbar:hover
-{
-    background-color: blue;
-}   
+} 
 .navbar-nav a{
     color: blue;
+    margin-top: 3px;
+    font-weight: bold;
 }
 .navbar-nav a:hover
 {
+    margin-top: 1.4px;
     background-color:lightgreen;
-    color: rgb(250, 0, 175);
-    font-weight: bold;
+    color: rgb(250, 0, 115);
 }
-.nav-link
+.dropdown-menu
 {
-    color: lightskyblue;
+    position: relative;
+    left: -18px;
+    border-radius: 9px;
+    background-image: url("/assets/images/bg1.jpg");
+    background-repeat: repeat-x;
+}
+marquee
+{
+    height: 30px;
+    color: darkgreen;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
 }
 .col-4
 {
@@ -60,3 +69,37 @@ footer a{
     margin-top: 10px
 
 }
+.col-4 
+{
+    padding: 20px;
+}
+.col-4 ul{
+    list-style-type: none;
+    margin-left: -38px;
+}
+
+#ft
+{
+    width: 100%;
+    height:auto;
+    margin: 0px;
+    margin-top:10px;
+    color: black;
+    font-weight: bold;
+    background-image: url("/assets/images/bg3.jpg");
+    background-size: 100%;
+}
+.hr1
+{
+    border-color: green;
+    margin: 0px;
+}
+.first-p
+{
+    text-align: center;
+    height: 30px;
+    background-color: lightgrey;
+    line-height: 30px;
+    color: grey;
+}
+

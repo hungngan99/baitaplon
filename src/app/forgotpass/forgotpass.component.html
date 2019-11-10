@@ -1,0 +1,29 @@
+<div class="container">
+    <div [hidden]="hiddenbaoloi">
+        <h4 style="color:red">Username hoặc Email không đúng !</h4>
+    </div>
+
+    <div [hidden]="hiddenshowpass">
+        <h4 style="color:black;" >Your password is: <span style="color:#e74c3c">{{student.password}}</span></h4>
+    </div>
+
+
+    <h1 style="color:blue;text-align:center">Quên mật khẩu</h1>
+    <form action="">
+        <div class="form-group">
+             <label for="validationCustom01"> Username</label>
+            <input type="text" class="form-control" id="validationCustom01" [(ngModel)]="formSudent.username"
+                [ngModelOptions]="{standalone: true}" placeholder="Nhập username của bạn">
+        </div>
+
+        <div class="form-group">
+            <label for="validationCustomUsername">Email</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Nhập email của bạn"
+                    [(ngModel)]="formSudent.email" [ngModelOptions]="{standalone: true}">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success mb-2" (click)="HienThiMatKhau()">Submit</button>
+    </form>
+
+</div>

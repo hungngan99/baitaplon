@@ -1,0 +1,25 @@
+.alert{
+    background-image: url('/assets/images/bg6.jpg');
+    background-size: 100%;
+    border:none
+}
+.form-group
+{
+    font-weight: bold;
+}
+.form-group>input{
+    background-color: white;
+}
+.btn:hover {
+    color: blue;
+    font-weight: bold;
+    background-color: rgb(42, 30, 210);
+}
+.fb
+{
+    margin-right: 25px;
+}
+.all{
+    background-image: url('/assets/images/bg6.jpg');
+    background-size: 100%;
+}

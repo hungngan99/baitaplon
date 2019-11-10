@@ -1,0 +1,56 @@
+.intro
+{
+    background-image: url('/assets/images/bg6.jpg');
+    background-size: 100%;
+    background-repeat: round;
+}
+.p-first
+{
+    padding: 25px;
+}
+.col-8 h4:hover
+{
+    font-size: 23px;
+    font-weight: bold;
+}
+.border h3
+{
+    color:blue;
+    padding:2px 4px  0px 20px;
+    margin: 0px;
+}
+aside h3:hover
+{
+    border-radius: 10px;
+    background-color: rgb(red, green, blue);
+    color: chocolate;
+}
+.list-group-item
+{
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    border-radius: 0px;
+}
+.list-group a
+{
+    border-radius: 10px;
+    background: lightsteelblue;
+    margin-bottom: 2px;
+}
+.list-group a:hover{
+    color: blue;
+    background-image: url('/assets/images/bg6.jpg');
+    background-size: 100%;
+}
+
+.p-second span
+{
+    color:black;
+    font-weight: bold;
+}
+.p-second em
+{
+    color: chocolate;
+    font-weight:bold;
+}

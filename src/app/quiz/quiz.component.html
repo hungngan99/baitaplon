@@ -1,0 +1,23 @@
+<div class="all">
+
+<div class="card text-center" *ngFor="let a of Quizs|paginate:{itemsPerPage:itemsperPage,currentPage:currentPage}">
+  <div class="card-header">
+    <h5><i class="fa fa-th-list" aria-hidden="true"></i> XÂY DỰNG TRANG WEB</h5>
+  </div>
+  <div class="card-body">
+    {{a.Text}}
+      <hr>
+    <p class="inputt" *ngFor="let x of a.Answers">
+      <input style="margin-right: 5px;" type="radio" name="{{a.Id}}" value="{{x.Text}}">{{x.Text}}
+    </p>
+  </div>
+  <div class="card-footer text-muted">
+    Marks: 0/80
+  </div>
+</div>
+<div class="move">
+    <button style='font-size:24px' (click)='lastPage()'><i class='fas fa-caret-square-left'></i> Previous</button>
+    <button style='font-size:24px' (click)='nextPage()'>Next <i class='fas fa-caret-square-right'></i></button>
+</div> <!--end button-->
+
+</div> <!--end all-->

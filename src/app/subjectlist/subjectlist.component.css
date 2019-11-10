@@ -1,0 +1,99 @@
+
+.list-group-item
+{
+    background-color: lightgrey;
+    color: black;
+    border-radius: 0px;
+}
+.list-group a:hover{
+    color: blue;
+    background: lightsteelblue;
+}
+.text-center
+{
+    float: right;
+    margin: 15px;
+    width: 45%; 
+}
+.text{
+    border: 1px solid lightgrey;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.text:hover
+{  
+    border:1px solid grey;
+    box-shadow:5px 5px 15px blueviolet;
+}
+.text-center a
+{
+    text-decoration: none;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    font-weight: bold;
+    color: black;
+}
+.text-center a:hover{
+    font-size: 19px;
+    color: blue;
+    background-color: lightgray;   
+}
+.text
+{
+    padding: 0px;
+    background-image: url("/assets/images/bg6.jpg");
+    background-repeat: round;
+}
+.move
+{
+    font-size: 30px;
+    float: right;
+}
+.move button
+{
+    background-image: url("/assets/images/bg6.jpg");
+    color: green;
+    margin:0px 35px;
+}
+.move button:hover
+{
+    color: red;
+}
+aside
+{
+    border: 1px solid lightgray;
+    border-radius: 9px;
+    margin-left: 51px;
+    padding: 0px;
+    margin-top: 14px;
+    background-image: url("/assets/images/bg6.jpg");
+    background-repeat: repeat-x;
+}
+.list-group a:hover{
+    background-image: url("/assets/images/bg9.jpg");
+    background-repeat: round;
+    color: blueviolet;
+}
+.col-3 .fa
+{
+    color:rgb(152, 0, 255);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0px 10px 20px;
+    margin: 0px;
+   
+}
+.list-group
+{
+    padding: 1px 2px;
+}
+.list-group a
+{
+    background-image: url("/assets/images/bg6.jpg");
+    background-repeat: repeat;
+    border-radius: 8px;
+}
+
+
+

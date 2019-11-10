@@ -1,0 +1,41 @@
+article
+{
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: thistle;
+}
+h3{
+    position: relative;
+    top:-40px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.star
+{
+    color: red;
+}
+textarea
+{
+    width: 100%;
+}
+.bt button:hover 
+{
+    background-color: chocolate;
+    color:black;
+}
+.map h3
+{
+    margin-top:37px;
+}
+.map iframe
+{
+    opacity: 0.5;
+    margin-left: 15px;
+}
+.map iframe:hover 
+{
+    opacity: 1;
+}
+

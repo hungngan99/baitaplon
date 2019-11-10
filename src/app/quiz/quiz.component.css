@@ -1,0 +1,73 @@
+.all
+{
+    background-color: lightgrey;
+    background-size: 100%;
+    padding:3% 0% 0% 14%;
+}
+.card
+{
+    width: 85%;
+}
+.card-header
+{
+    background-image: url("/assets/images/bg6.jpg");
+    background-size: 100%;
+}
+.card-header h5
+{
+    margin: 0px;
+} 
+.card-body>.inputt
+{
+    float: left;
+    clear: left;
+}
+.card-footer
+{
+    background-image: url("/assets/images/bg6.jpg");
+    background-size: 100%;
+}
+.list-group-item
+{
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    border-radius: 0px;
+}
+.list-group a:hover{
+    color: blue;
+    background: lightsteelblue;
+}
+h6
+{
+    font-weight: bold;
+    margin: 0px !important;
+    padding: 7px 17px;
+    background-color: lightgray;
+}
+.move
+{
+    text-align: center;
+    margin-top: 12px;
+}
+.move button
+{
+    background-image: url("/assets/images/bg6.jpg");
+    color:blue;
+    margin:0px 45px;
+}
+.move button:hover
+{
+    color: red;
+}
+.radio
+{
+    padding: 10px 0px 15px 30px;
+    border:1px solid grey;
+}
+.marks
+{
+    background-color: lightgrey;
+    border:1px solid lightgrey;
+    padding: 5px 0px 5px 12px;
+}
