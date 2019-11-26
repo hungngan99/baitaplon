@@ -2,16 +2,17 @@
     <!-- *ngFor="let a of Quizs|paginate:{itemsPerPage:itemsperPage,currentPage:currentPage}" -->
   <div class="card text-center">
     <div class="card-header">
-      <h5><i class="fa fa-th-list" aria-hidden="true"></i> XÂY DỰNG TRANG WEB</h5>
+      <h5 style="float: left;"><i class="fa fa-th-list" aria-hidden="true"></i> XÂY DỰNG TRANG WEB</h5>
         <!-- <button type="button" class="btn txtshadow btn-sm btn-primary" (click)="startTime()" id="timer">
             BẮT ĐẦU
         </button> -->
-        <div class="mt-2">
-          <span class="text-success mr-2">Thời Gian:</span>
-          <img src="assets/images/dongho.jpg" class="mr-1 pb-2" alt="" style="max-width: 35px">
-          <span class="bg-black text-center txtshadow text-white " id="timer">60':00</span>
+        <div class="mt-2" style="font-size: 20px; float:right;">
+          <span class="text-danger mr-2" style="font-weight:bold">Thời Gian:</span>
+          <span class="bg-blue text-center txtshadow text-blue "id="timer">
+             <span style="font-weight: bold;text-shadow: 3px 3px 5px chocolate;"> 60':00 </span>
+          </span>
           <span *ngIf="showTime" class="show fade ml-4">
-              <button type="button" class="btn txtshadow btn-sm btn-danger" (click)="startTime()">
+              <button type="button" class="btn txtshadow btn-sm btn-success" (click)="startTime()">
                   BẮT ĐẦU
               </button>
           </span>
@@ -26,15 +27,15 @@
     </div> -->
     <div class="noidung"
     *ngFor='let cauhoi of Quizs|paginate:{itemsPerPage:rowpage,currentPage:page}'>
-    <p> {{cauhoi.Text}}</p> <br>
-    <div *ngFor="let Ans of cauhoi.Answers" class="ml-5 mb-3 text-primary">
-        <input [(ngModel)]="answers[page-1]" name="{{cauhoi.Id}}" id="{{Ans.Id}}"
+    <p style="font-size: 20px;color: chocolate; margin-top: 10px;"> {{cauhoi.Text}}</p> <br>
+    <div  *ngFor="let Ans of cauhoi.Answers" class="ml-5 mb-3 text-primary" style="float: left;clear: left;">
+        <input  [(ngModel)]="answers[page-1]" name="{{cauhoi.Id}}" id="{{Ans.Id}}"
             value="{{Ans.Id}}" class="form-check-input" type="radio">
         <label for="{{Ans.Id}}">{{Ans.Text}}</label>
     </div>
 </div>
     <div class="card-footer text-muted">
-      Marks: 0/80
+      Câu hỏi: 0/80
     </div>
   </div>
     <div class="move">
@@ -56,15 +57,12 @@
                   <table class="table table-striped bgr table-responsive-sm text-primary table-bordered text-center">
                       <thead class="table-success h5">
                           <tr>
-                              <th scope="col">Môn Thi</th>
                               <th scope="col">Điểm Thi</th>
                               <th scope="col">Thời Gian Làm Bài</th>
                           </tr>
                       </thead>
                       <tbody>
                           <tr class="text-black h5">
-                              <td  class="align-middle">{{Name}}</td>
-      
                               <td class="align-middle">{{point}}</td>
                               <td id="timer-2" class="align-middle"></td>
                           </tr>
