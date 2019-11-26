@@ -1,39 +1,63 @@
-<div class="alert alert-primary" role="alert" style="background-color:lightgrey;color: gray bold ;border-radius: 0px">
-    <h4 style="text-align: center">
-            Đăng ký tài khoản
+<div class="alert alert-primary" role="alert">
+    <h4>
+            ĐĂNG KÝ TÀI KHOẢN
     </h4>
+    <hr style="margin: 0px 0px 0px 4.5%;border-color: lightgrey;width: 90%;">
 </div>
-<div class="row">
-    <div class="col-6" style="margin-left: 20px">
+    <div *ngIf="hidden" class="align-center" style="width: 50%; margin: 0px auto;">
         <h4>Thông tin tài khoản</h4>
-        <form>
-            <div class="form-group">
-                <label for="inputEmail4">Địa chỉ Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Nhập Email">
-            </div>
+        <form #formdangki="ngForm" (ngSubmit)="submit(formdangki)">
 
             <div class="form-group">
-                    <label for="inputEmail4">Mật Khẩu</label>
-                    <input type="password" class="form-control" id="inputEmail4" placeholder="******" style="margin-bottom: 17px">
-                    <label for="inputEmail4">Xác Mật nhận mật khẩu </label> 
-                    <input type="password" class="form-control" id="inputEmail4" placeholder="******" style="margin-bottom: 17px">
-
-                    <a class="dangky" href="#"><input type="submit" class="btn btn-primary" value="Đăng ký tài khoản" name="Đăng ký tài khoản" style="width:100%;background-color:hsl(147, 50%, 47%)"></a>
-                <a href="#">
-                    <button type="button" class="btn btn-primary" value="Đăng nhập facebook" style="width:100%;margin:17px 0px"> Đăng ký bằng facebook </button>                    
-                </a>               
-                <a href="#" class="fb"> Cần hổ trợ ? </a>
+                <label for="inputEmail4">Full Name</label>  
+                <input type="text" class="form-control" [(ngModel)]='formdk.fullname' name="fullname" placeholder="Họ tên đầy đủ">
+                    <label for="text">Tên đăng nhập</label>  
+                    <input type="text" class="form-control" [(ngModel)]='formdk.username' name="username"  placeholder="Tên đăng nhập">
+                    <label for="inputEmail4">Giới tính</label>
+                    <input type="radio" [(ngModel)]='formdk.gender' name="gender" value="true">Nam
+                    <input type="radio" [(ngModel)]='formdk.gender' name="gender" value="false">Nữ 
+                    <input type="text" class="form-control" [(ngModel)]='formdk.email'  placeholder="Nhập email" name="email" style="margin-bottom: 17px">
+                    <input type="password" class="form-control" [(ngModel)]='formdk.password'  placeholder="Nhập password" name="password" style="margin-bottom: 17px">
+                    <input type="password" class="form-control"  placeholder="Nhập lại password" name="password" style="margin-bottom: 17px">
+                <div class="bt">
+                    <input type="date" class="form-control" [(ngModel)]='formdk.birthday' placeholder="Ngày sinh" name="birthday"
+                        required>
+                    <input type="submit" class="btn btn-success" value="ĐĂNG KÝ TÀI KHOẢN" name="ĐĂNG KÝ TÀI KHOẢN" >
+                    <a href="https://www.facebook.com/">
+                        <button type="button" class="btn btn-success"   value="ĐĂNG NHẬP BẰNG FACEBOOK" style="margin:17px 20px;">
+                            ĐĂNG KÝ BẰNG FACEBOOK </button>                    
+                    </a>
+                </div>               
+                <a [routerLink]="['/cotact']"> Cần hổ trợ ? </a>
             </div>                                                 
         </form>   
-    </div>
-    <div class="col-5 " style="margin-left:60px">
-            <h4>Thông tin cá nhân</h4>  
-            <label for="text">Họ và tên</label>
-            <input type="text" class="form-control"  placeholder="Nhập họ và tên" style="margin-bottom:17px ">
-            <label for="text">Số điện thoại</label>
-            <input type="text" class="form-control"  placeholder="Nhập số điện thoại">              
-    </div>
-</div>
+    </div> <!--end form-->
+<div *ngIf="!hidden">
+    <table class="table table-hover table-bodered">
+      <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>User Name</th>
+            <th>Gender</th>      
+            <th>Email</th>
+            <th>Password</th>
+            <th>Birthday</th>
+  
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>{{formdk.fullname}}</td>
+            <td>{{formdk.username}}</td>
+            <td>{{formdk.gender}}</td>
+            <td>{{formdk.email}}</td>
+            <td>{{formdk.password}}</td>
+            <td>{{formdk.birthday}}</td>
+        </tr>
+      </tbody>
+    </table> 
+    <button type="button" [routerLink]="['/login']" routerLinkActive="router-link-active"  class="btn btn-primary">Đăng Nhập</button>
+  </div>
 
 
 

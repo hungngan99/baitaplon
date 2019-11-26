@@ -9,7 +9,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class ForgotpassComponent implements OnInit {
 
-  formSudent = {
+  formStudent = {
     username: "",
     email: "",
   }
@@ -29,8 +29,8 @@ export class ForgotpassComponent implements OnInit {
 
     
     for (let i = 0; i < this.students.length; i++) {
-      if (this.students[i].username == this.formSudent.username &&
-        this.students[i].email == this.formSudent.email) {
+      if (this.students[i].username == this.formStudent.username &&
+        this.students[i].email == this.formStudent.email) {
         this.student = this.students[i];
         break;
       }
@@ -43,7 +43,7 @@ export class ForgotpassComponent implements OnInit {
     else {
       this.hiddenbaoloi = true;
       this.hiddenshowpass = false;
-      alert(`your password is ${this.student.password}`)
+      alert(`Mật khẩu của bạn là ${this.student.password}`)
     }
 
   }

@@ -1,0 +1,24 @@
+.alert{
+    background-image: url('/assets/images/bg6.jpg');
+    background-size: 100%;
+    border:none;
+    padding: 0px;
+    padding-top: 10px;
+    margin:0px;
+    border-radius: 0px;
+}
+.alert h4
+{
+    color: blue;
+    text-align: center;
+}
+.all{
+    background-image: url('/assets/images/bg6.jpg');
+    background-size: 100%;
+    padding: 20px;
+}
+.btn:hover
+{
+    background-color: chocolate;
+    border-color: chocolate;
+}

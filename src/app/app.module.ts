@@ -18,13 +18,8 @@ import { UpdateaccComponent } from './updateacc/updateacc.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ForgottenaccountComponent } from './forgottenaccount/forgottenaccount.component';
 import { CreateaccComponent } from './createacc/createacc.component';
-import { AdavComponent } from './adav/adav.component';
-import { DbavComponent } from './dbav/dbav.component';
-import { DbbsComponent } from './dbbs/dbbs.component';
-import { WebuComponent } from './webu/webu.component';
 import {FormsModule} from '@angular/forms';
-import { ThiTnComponent } from './thi-tn/thi-tn.component';
-import { ForgotpassComponent } from './forgotpass/forgotpass.component'
+import { ForgotpassComponent } from './forgotpass/forgotpass.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,12 +36,7 @@ import { ForgotpassComponent } from './forgotpass/forgotpass.component'
     LogoutComponent,
     ForgottenaccountComponent,
     CreateaccComponent,
-    AdavComponent,
-    DbavComponent,
-    DbbsComponent,
-    WebuComponent,
-    ThiTnComponent,
-    ForgotpassComponent
+    ForgotpassComponent,
   ],
   imports: [
     FormsModule,
@@ -69,6 +59,7 @@ import { ForgotpassComponent } from './forgotpass/forgotpass.component'
       {path:"quiz", component:QuizComponent},
       {path:"createacc", component:CreateaccComponent},
       {path:"forgot", component:ForgotpassComponent},
+      { path: '**', redirectTo: 'products', pathMatch: 'full' },
     ])
   ],
   providers: [],

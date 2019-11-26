@@ -1,0 +1,21 @@
+.alert{
+    border:none;
+    padding: 0px;
+    padding-top: 10px;
+    margin:0px;
+    border-radius: 0px;
+    margin-bottom: 12px;
+}
+.alert h4
+{
+    color: blue;
+    text-align: center;
+}
+.bt
+{
+    display: block;
+}
+.btn:hover {
+    color: white;
+    background-color: rgb(0, 110, 255);
+}

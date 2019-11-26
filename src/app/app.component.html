@@ -15,16 +15,13 @@
           <li class="nav-item active">
             <a class="nav-link"  [routerLink]="['/feedback']"><i class="fa fa-envelope-open" aria-hidden="true"></i>GÓP Ý<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item active" style="margin-right:220px">
             <a class="nav-link"  [routerLink]="['/question']"><i class="fa fa-question-circle" aria-hidden="true"></i>HỎI ĐÁP<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active" >
-              <a class="nav-link" [routerLink]="['/subjectlist']"><i class="fa fa-th-list" aria-hidden="true"></i>DANH MỤC MÔN HỌC<span class="sr-only">(current)</span></a>
-            </li> 
+          </li> 
           <li class="nav-item dropdownnav-item dropdown" id="taikhoan" style="margin-left: 100px;">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <button  type="button" style="color:blueviolet;background:lightgreen;font-weight: bold;margin-top: -3px">
-                <i class="fa fa-user-circle" aria-hidden="true"></i>TÀI KHOẢN
+              <button *ngFor="let tk of taikhoan"  type="button" class="btn btn-success" style="color:white;font-weight: bold;margin-top: -3px">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>{{tk.username}}
               </button>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,7 +39,7 @@
       </div> <!--end nav small-->
     </nav> <!--end nav big-->
     <marquee  behavior="SCROLL" scrolldelay="100" scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()" direction="left">
-      <img src="./assets/logos/ADAV.jpg" width="10%" height="10%">  Chào mừng bạn đến với trang web của chúng tôi !</marquee>
+       Chào mừng bạn đến với trang web của chúng tôi !</marquee>
 <router-outlet></router-outlet>
 <footer id="ft" class="row" >
 <div class="col-4">

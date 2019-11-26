@@ -17,6 +17,10 @@
     padding:0px;
     padding: 10px;
 }
+#navbarDropdown button:hover{
+    background-image: url("/assets/images/bg1.jpg");
+    background-repeat: repeat-x;
+}
 .nav-item a i{
     margin-right: 4px;
 }
@@ -32,22 +36,27 @@
 .navbar-nav a:hover
 {
     margin-top: 1.4px;
-    background-color:lightgreen;
     color: rgb(250, 0, 115);
 }
 .dropdown-menu
 {
     position: relative;
-    left: -18px;
+    left: -19px;
     border-radius: 9px;
     background-image: url("/assets/images/bg1.jpg");
+    background-repeat: repeat-x;
+}
+.dropdown-menu a:hover 
+{
+    background-image: url("/assets/images/bg4.jpg");
     background-repeat: repeat-x;
 }
 marquee
 {
     height: 30px;
-    color: darkgreen;
-    font-size: 20px;
+    line-height: 30px;
+    color: red;
+    font-size: 21px;
     font-weight: bold;
     text-align: justify;
 }

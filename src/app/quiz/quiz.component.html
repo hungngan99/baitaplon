@@ -1,23 +1,82 @@
-<div class="all">
-
-<div class="card text-center" *ngFor="let a of Quizs|paginate:{itemsPerPage:itemsperPage,currentPage:currentPage}">
-  <div class="card-header">
-    <h5><i class="fa fa-th-list" aria-hidden="true"></i> XÂY DỰNG TRANG WEB</h5>
-  </div>
-  <div class="card-body">
-    {{a.Text}}
-      <hr>
-    <p class="inputt" *ngFor="let x of a.Answers">
-      <input style="margin-right: 5px;" type="radio" name="{{a.Id}}" value="{{x.Text}}">{{x.Text}}
-    </p>
-  </div>
-  <div class="card-footer text-muted">
-    Marks: 0/80
-  </div>
+  <div class="all">
+    <!-- *ngFor="let a of Quizs|paginate:{itemsPerPage:itemsperPage,currentPage:currentPage}" -->
+  <div class="card text-center">
+    <div class="card-header">
+      <h5><i class="fa fa-th-list" aria-hidden="true"></i> XÂY DỰNG TRANG WEB</h5>
+        <!-- <button type="button" class="btn txtshadow btn-sm btn-primary" (click)="startTime()" id="timer">
+            BẮT ĐẦU
+        </button> -->
+        <div class="mt-2">
+          <span class="text-success mr-2">Thời Gian:</span>
+          <img src="assets/images/dongho.jpg" class="mr-1 pb-2" alt="" style="max-width: 35px">
+          <span class="bg-black text-center txtshadow text-white " id="timer">60':00</span>
+          <span *ngIf="showTime" class="show fade ml-4">
+              <button type="button" class="btn txtshadow btn-sm btn-danger" (click)="startTime()">
+                  BẮT ĐẦU
+              </button>
+          </span>
+      </div>
+    </div>
+    <!-- <div class="card-body">
+      <span style="font-size: 20px;color: chocolate;">{{a.Text}}</span>
+        <hr><i class="devicons devicons-komodo"></i>
+      <p class="inputt" *ngFor="let x of a.Answers">
+        <input style="margin-right: 5px;" type="radio" name="{{a.Id}}" value="{{x.Text}}">{{x.Text}}
+      </p>
+    </div> -->
+    <div class="noidung"
+    *ngFor='let cauhoi of Quizs|paginate:{itemsPerPage:rowpage,currentPage:page}'>
+    <p> {{cauhoi.Text}}</p> <br>
+    <div *ngFor="let Ans of cauhoi.Answers" class="ml-5 mb-3 text-primary">
+        <input [(ngModel)]="answers[page-1]" name="{{cauhoi.Id}}" id="{{Ans.Id}}"
+            value="{{Ans.Id}}" class="form-check-input" type="radio">
+        <label for="{{Ans.Id}}">{{Ans.Text}}</label>
+    </div>
 </div>
-<div class="move">
-    <button style='font-size:24px' (click)='lastPage()'><i class='fas fa-caret-square-left'></i> Previous</button>
-    <button style='font-size:24px' (click)='nextPage()'>Next <i class='fas fa-caret-square-right'></i></button>
-</div> <!--end button-->
+    <div class="card-footer text-muted">
+      Marks: 0/80
+    </div>
+  </div>
+    <div class="move">
+      <button style='font-size:24px' (click)='lastPage()'><i class='fas fa-caret-square-left'></i> Previous</button>
+      <button style='font-size:24px' (click)="pointTest()" (click)='nextPage()'>Next <i class='fas fa-caret-square-right'></i></button>
 
-</div> <!--end all-->
+      <button style="background-color: blue;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" (click)="tinhDiem()" (click)="endTime()">
+        NỘP BÀI
+      </button>
+
+        <div style="margin-top: 10%;" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 w-100 class="modal-title" id="exampleModalLabel" style="background-color: chocolate; width: 100%;">KÉT QUẢ THI CỦA BẠN</h5>
+              </div>
+              <div class="modal-body">
+                <div id="result">
+                  <table class="table table-striped bgr table-responsive-sm text-primary table-bordered text-center">
+                      <thead class="table-success h5">
+                          <tr>
+                              <th scope="col">Môn Thi</th>
+                              <th scope="col">Điểm Thi</th>
+                              <th scope="col">Thời Gian Làm Bài</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr class="text-black h5">
+                              <td  class="align-middle">{{Name}}</td>
+      
+                              <td class="align-middle">{{point}}</td>
+                              <td id="timer-2" class="align-middle"></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div> <!--end tinhDiem-->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div> <!--end modal-->
+    </div> <!--end move-->
+  </div> <!--end all-->

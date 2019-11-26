@@ -1,0 +1,33 @@
+.alert{
+    border:none;
+    padding: 0px;
+    padding-top: 10px;
+    margin:0px;
+    border-radius: 0px;
+    margin-bottom: 12px;
+}
+.alert h4
+{
+    color: blue;
+    text-align: center;
+}
+.btn
+{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+.btn:hover {
+    color: white;
+    background-color: rgb(0, 110, 255);
+}
+.fb
+{
+    margin-right: 25px;
+    display:inline-block block;
+}
+.fb:hover
+{
+    color: rgb(100, 51, 26);
+    font-weight: bold;
+}
